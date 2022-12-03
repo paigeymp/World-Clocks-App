@@ -32,86 +32,16 @@
         <i class="fa-solid fa-map-pin map-pin"></i>
         <h1>World Clock</h1>
 
-        <select name="" id="">
+        <select name="cities" id="city-selector">
           <option value="">Select a city...</option>
-          <option value="">Auckland</option>
-          <option value="">Mexico City</option>
-          <option value="">Paris</option>
-          <option value="">Tokyo</option>
+          <option value="Pacific/Auckland">Auckland</option>
+          <option value="America/Mexico_City">Mexico City</option>
+          <option value="Europe/Paris">Paris</option>
+          <option value="Asia/Tokyo">Tokyo</option>
         </select>
         <hr />
 
-        <div class="cityTimezone" id="auckland">
-          <div class="row">
-            <div class="col-8">
-              <span class="date"></span>
-              <span class="timeDifference"></span>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-7">
-              <div class="city">Auckland</div>
-            </div>
-            <div class="col-5">
-              <span class="time"></span>
-              <span class="amPm"></span>
-            </div>
-          </div>
-        </div>
-
-        <div class="cityTimezone" id="mexico-city">
-          <div class="row">
-            <div class="col-8">
-              <span class="date"></span>
-              <span class="timeDifference"></span>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-7">
-              <div class="city">Mexico City</div>
-            </div>
-            <div class="col-5">
-              <span class="time"></span>
-              <span class="amPm"></span>
-            </div>
-          </div>
-        </div>
-
-        <div class="cityTimezone" id="paris">
-          <div class="row">
-            <div class="col-8">
-              <span class="date"></span>
-              <span class="timeDifference"></span>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-7">
-              <div class="city">Paris</div>
-            </div>
-            <div class="col-5">
-              <span class="time"></span>
-              <span class="amPm"></span>
-            </div>
-          </div>
-        </div>
-
-        <div class="cityTimezone" id="tokyo">
-          <div class="row">
-            <div class="col-8">
-              <span class="date"></span>
-              <span class="timeDifference"></span>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-7">
-              <div class="city">Tokyo</div>
-            </div>
-            <div class="col-5">
-              <span class="time"></span>
-              <span class="amPm"></span>
-            </div>
-          </div>
-        </div>
+        <div id="cities"></div>
       </div>
       <footer>
         Coded by Paige Powell,
