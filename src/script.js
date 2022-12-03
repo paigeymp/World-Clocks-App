@@ -73,23 +73,20 @@ function updateCity(event) {
   let cityName = cityTimezone.replace("_", " ").split("/")[1];
   let cityTime = moment().tz(cityTimezone);
   let citiesElement = document.querySelector("#cities");
-  citiesElement.innerHTML = `  <div class="cityTimezone">
-            <div class="row">
-              <div class="col-8">
-                <span class="date">${cityTime.format("dddd")}</span>
-                <span class="timeDifference">${cityTime.format("Z")}</span>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-7">
-                <div class="city">${cityName}</div>
-              </div>
-              <div class="col-5">
-                <span class="time">${cityTime.format("h:mm")}</span>
-                <span class="amPm">${cityTime.format("A")}</span>
-              </div>
-            </div>
-          </div>`;
+  citiesElement.innerHTML = `   <div class="cityTimezone">
+        <div class="row">
+          <div class="col">
+            <span class="date">${cityTime.format("dddd")}</span>
+            <span class="timeDifference">${cityTime.format("Z")}</span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col cityDisplay">
+            <span>${cityName}</span>
+            <span>${cityTime.format("h:mm A")}</span>
+          </div>
+        </div>
+        </div>`;
 }
 
 updateTime();
