@@ -48,11 +48,19 @@ hr {
 
 .map-pin {
   color: rgb(194, 54, 54, 0.8);
+}
+
+.refrehs,
+.map-pin {
   display: block;
   margin: 0 auto;
   padding: 0 10px 0 10px;
   text-align: center;
   font-size: 30px;
+}
+
+.refresh {
+  color: white;
 }
 
 .cityTimezone {

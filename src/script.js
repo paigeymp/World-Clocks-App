@@ -87,7 +87,8 @@ function updateCity(event) {
             <span>${cityTime.format("h:mm [<small>]A[</small>]")}</span>
           </div>
         </div>
-        </div>`;
+        </div>
+        <a href="/"><i class="fa-solid fa-rotate-right refresh"></i></a>`;
 }
 
 updateTime();
