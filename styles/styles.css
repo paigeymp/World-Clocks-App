@@ -67,7 +67,8 @@ hr {
   border: none;
 }
 
-.date {
+.date,
+.timeDifference {
   color: white;
   font-size: 14px;
   opacity: 0.5;
