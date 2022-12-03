@@ -5,14 +5,14 @@ function updateTime() {
   if (aucklandElement) {
     let aucklandDateElement = aucklandElement.querySelector(".date");
     let aucklandTimeElement = aucklandElement.querySelector(".time");
-    let aucklandAmPmElement = aucklandElement.querySelector(".amPm");
     let aucklandTimeDifferenceElement =
       aucklandElement.querySelector(".timeDifference");
     let aucklandTime = moment().tz("Pacific/Auckland");
 
     aucklandDateElement.innerHTML = `${aucklandTime.format("dddd")},`;
-    aucklandTimeElement.innerHTML = `${aucklandTime.format("h:mm")}`;
-    aucklandAmPmElement.innerHTML = `${aucklandTime.format("A")}`;
+    aucklandTimeElement.innerHTML = `${aucklandTime.format(
+      "h:mm [<small>]A[</small>]"
+    )}`;
     aucklandTimeDifferenceElement.innerHTML = `${aucklandTime.format("Z")}`;
   }
   //mexico
@@ -21,14 +21,14 @@ function updateTime() {
   if (mexicoElement) {
     let mexicoDateElement = mexicoElement.querySelector(".date");
     let mexicoTimeElement = mexicoElement.querySelector(".time");
-    let mexicoAmPmElement = mexicoElement.querySelector(".amPm");
     let mexicoTimeDifferenceElement =
       mexicoElement.querySelector(".timeDifference");
     let mexicoTime = moment().tz("America/Mexico_City");
 
     mexicoDateElement.innerHTML = `${mexicoTime.format("dddd")},`;
-    mexicoTimeElement.innerHTML = `${mexicoTime.format("h:mm")}`;
-    mexicoAmPmElement.innerHTML = `${mexicoTime.format("A")}`;
+    mexicoTimeElement.innerHTML = `${mexicoTime.format(
+      "h:mm [<small>]A[</small>]"
+    )}`;
     mexicoTimeDifferenceElement.innerHTML = `${mexicoTime.format("Z")}`;
   }
   // paris
@@ -37,14 +37,14 @@ function updateTime() {
   if (parisElement) {
     let parisDateElement = parisElement.querySelector(".date");
     let parisTimeElement = parisElement.querySelector(".time");
-    let parisAmPmElement = parisElement.querySelector(".amPm");
     let parisTimeDifferenceElement =
       parisElement.querySelector(".timeDifference");
     let parisTime = moment().tz("Europe/Paris");
 
     parisDateElement.innerHTML = `${parisTime.format("dddd")},`;
-    parisTimeElement.innerHTML = `${parisTime.format("h:mm")}`;
-    parisAmPmElement.innerHTML = `${parisTime.format("A")}`;
+    parisTimeElement.innerHTML = `${parisTime.format(
+      "h:mm [<small>]A[</small>]"
+    )}`;
     parisTimeDifferenceElement.innerHTML = `${parisTime.format("Z")}`;
   }
   // tokyo
@@ -53,14 +53,14 @@ function updateTime() {
   if (tokyoElement) {
     let tokyoDateElement = tokyoElement.querySelector(".date");
     let tokyoTimeElement = tokyoElement.querySelector(".time");
-    let tokyoAmPmElement = tokyoElement.querySelector(".amPm");
     let tokyoTimeDifferenceElement =
       tokyoElement.querySelector(".timeDifference");
     let tokyoTime = moment().tz("Asia/Tokyo");
 
     tokyoDateElement.innerHTML = `${tokyoTime.format("dddd")},`;
-    tokyoTimeElement.innerHTML = `${tokyoTime.format("h:mm")}`;
-    tokyoAmPmElement.innerHTML = `${tokyoTime.format("A")}`;
+    tokyoTimeElement.innerHTML = `${tokyoTime.format(
+      "h:mm  [<small>]A[</small>]"
+    )}`;
     tokyoTimeDifferenceElement.innerHTML = `${tokyoTime.format("Z")}`;
   }
 }
