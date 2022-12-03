@@ -83,7 +83,8 @@ function updateCity(event) {
         <div class="row">
           <div class="col cityDisplay">
             <span>${cityName}</span>
-            <span>${cityTime.format("h:mm A")}</span>
+            <br>
+            <span>${cityTime.format("h:mm [<small>]A[</small>]")}</span>
           </div>
         </div>
         </div>`;

@@ -75,12 +75,12 @@ hr {
 }
 
 .cityDisplay {
-  display: flex;
-  justify-content: space-between;
   font-size: 32px;
   color: rgb(196, 196, 110);
   vertical-align: middle;
   line-height: 48px;
+  text-align: center;
+  justify-content: space-between;
 }
 
 footer {
