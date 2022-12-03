@@ -1,13 +1,98 @@
+html,
 body {
-  background: black;
-  color: white;
-  margin: 100px;
+  margin: 0;
+  height: 100%;
+  overflow: auto;
+}
+
+.bg-container {
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/056/062/original/pexels-martin-p%C3%A9chy-2078268.jpg?1669995437");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+
+  box-sizing: border-box;
+  padding: 50px;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: rgba(16, 10, 36, 0.918);
+  padding: 50px;
+  box-shadow: 0px 7px 29px rgb(100, 100, 111, 0.5);
+  border-radius: 100px;
 }
 
 h1 {
   text-align: center;
+  color: rgb(196, 196, 110);
+  font-family: "Trade Winds", cursive;
+}
+
+select {
+  display: block;
+  margin: 0 auto;
+  padding: 8px;
+  border-radius: 20px;
+  width: 30%;
+  text-align: center;
+  background-color: rgba(16, 10, 36, 0.918);
+  color: #ffffff;
+  font-family: "Trade Winds", cursive;
+}
+
+hr {
+  border-bottom: 1px dashed rgba(240, 225, 225, 1);
+}
+
+.map-pin {
+  color: rgb(194, 54, 54, 0.8);
+  display: block;
+  margin: 0 auto;
+  padding: 0 10px 0 10px;
+  text-align: center;
+  font-size: 30px;
+}
+
+.cityTimezone {
+  font-family: "Zen Dots", cursive;
+  padding: 20px 0;
+  display: block;
+  margin: 0 auto;
+  border-bottom: 1px dashed rgba(240, 225, 225, 0.2);
+}
+
+.cityTimezone:last-child {
+  border: none;
+}
+
+.date {
+  color: white;
+  font-size: 14px;
+  opacity: 0.5;
+}
+
+.city {
+  color: rgb(196, 196, 110);
+  font-size: 32px;
+}
+
+.time {
+  font-size: 32px;
+  color: rgb(196, 196, 110);
+}
+
+.amPm {
+  font-size: 20px;
+  color: #b4a9a9;
 }
 
 footer {
   text-align: center;
+  color: #ffffff;
+  opacity: 0.5;
+  padding: 30px;
+  font-size: 14px;
+  font-family: "Trade Winds", cursive;
 }
