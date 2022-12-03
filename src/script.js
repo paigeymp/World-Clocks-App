@@ -11,7 +11,7 @@ function updateTime() {
 
     aucklandDateElement.innerHTML = `${aucklandTime.format("dddd")},`;
     aucklandTimeElement.innerHTML = `${aucklandTime.format(
-      "h:mm [<small>]A[</small>]"
+      "h:mm:ss [<small>]A[</small>]"
     )}`;
     aucklandTimeDifferenceElement.innerHTML = `${aucklandTime.format("Z")}`;
   }
@@ -27,7 +27,7 @@ function updateTime() {
 
     mexicoDateElement.innerHTML = `${mexicoTime.format("dddd")},`;
     mexicoTimeElement.innerHTML = `${mexicoTime.format(
-      "h:mm [<small>]A[</small>]"
+      "h:mm:ss [<small>]A[</small>]"
     )}`;
     mexicoTimeDifferenceElement.innerHTML = `${mexicoTime.format("Z")}`;
   }
@@ -43,7 +43,7 @@ function updateTime() {
 
     parisDateElement.innerHTML = `${parisTime.format("dddd")},`;
     parisTimeElement.innerHTML = `${parisTime.format(
-      "h:mm [<small>]A[</small>]"
+      "h:mm:ss [<small>]A[</small>]"
     )}`;
     parisTimeDifferenceElement.innerHTML = `${parisTime.format("Z")}`;
   }
@@ -59,7 +59,7 @@ function updateTime() {
 
     tokyoDateElement.innerHTML = `${tokyoTime.format("dddd")},`;
     tokyoTimeElement.innerHTML = `${tokyoTime.format(
-      "h:mm  [<small>]A[</small>]"
+      "h:mm:ss  [<small>]A[</small>]"
     )}`;
     tokyoTimeDifferenceElement.innerHTML = `${tokyoTime.format("Z")}`;
   }
@@ -93,5 +93,6 @@ function updateCity(event) {
 
 updateTime();
 setInterval(updateTime, 1000);
+
 let citiesSelectElement = document.querySelector("#city-selector");
 citiesSelectElement.addEventListener("change", updateCity);
